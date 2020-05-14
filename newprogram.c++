@@ -13,5 +13,11 @@ int main()
     cout << "Size of float :" << sizeof(b)<<"bytes"<<endl;
     cout << "Size of double :" << sizeof(c)<<"bytes"<<endl;
     return 0;
+    float d,prod;
+    cout<<"Enter the values of a and b"<<endl;
+    cin >> b;
+    cin>>d;
+    prod=b*d;
+    cout<<"The product of "<<b<<" & "<<d<<" is "<<prod;
 
 }
