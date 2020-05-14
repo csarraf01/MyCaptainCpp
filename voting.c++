@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
    int age;
-   string name;
+   string name,reg_state;
    string nationality;
    cout<<"ENTER THE NAME OF THE VOTER: ";
    cin>>name;
@@ -13,9 +13,13 @@ int main()
    cin>>age;
    cout<<"ENTER THE NATIONALITY OF THE VOTER: ";
    cin>>nationality;
-
+   cout<<"ENTER THE STATE WHERE THE VOTER'S NAME IS REISTERED: ";
+   cin>>reg_state;
    if(age>=18&&nationality=="INDIAN")
-    cout<<"ELIGIBLE";
+   {
+    cout<<"ELIGIBLE\n";
+    cout<<"YOU ARE ELIGIBLE TO VOTE IN: "<<reg_state;
+   }
     else
     cout<<"NOT ELIGIBLE";
 
